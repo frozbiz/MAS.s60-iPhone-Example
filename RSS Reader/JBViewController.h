@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JBViewController : UIViewController
+@interface JBViewController : UIViewController {
+    
+    IBOutlet UIWebView *mapView;
+    IBOutlet UITextField *countryName;
+}
+
+@property (nonatomic, retain) UIWebView *mapView;
 
 @end

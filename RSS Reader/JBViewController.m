@@ -14,10 +14,27 @@
 
 @implementation JBViewController
 
+@synthesize mapView;
+
+- (void)centerMapWithLat:(double)lat andLon:(double)lon andZoom:(unsigned)zoomLevel
+{
+    NSString *urlAddress = [NSString stringWithFormat:@"http://maps.stamen.com/watercolor/embed#%u/%f/%f", zoomLevel, lat, lon];
+
+    //Create a URL object.
+    NSURL *url = [NSURL URLWithString:urlAddress];
+
+    //URL Requst Object
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    
+    //Load the request in the UIWebView.
+    [mapView loadRequest:requestObj];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [self centerMapWithLat:42.358449 andLon:-71.09122 andZoom:1];
 }
 
 - (void)didReceiveMemoryWarning

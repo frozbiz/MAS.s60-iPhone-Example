@@ -1,21 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2519" systemVersion="12A206j" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1856"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="4">
             <objects>
                 <viewController id="2" customClass="JBViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Get to Know:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkF-OQ-TrP">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a country" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eqt-WH-eHx">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="630" id="CLl-cY-IcF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="5" id="hGD-cH-epR"/>
+                                </connections>
+                            </textField>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1SK-uu-Cjc">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1SK-uu-Cjc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="0i0-2W-L4q"/>
+                            <constraint firstItem="Eqt-WH-eHx" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="EqU-OS-21k"/>
+                            <constraint firstItem="1SK-uu-Cjc" firstAttribute="top" secondItem="zkF-OQ-TrP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Icd-72-swO"/>
+                            <constraint firstItem="1SK-uu-Cjc" firstAttribute="top" secondItem="Eqt-WH-eHx" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="K9q-04-JKU"/>
+                            <constraint firstAttribute="trailing" secondItem="1SK-uu-Cjc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="byI-q4-3oz"/>
+                            <constraint firstAttribute="trailing" secondItem="Eqt-WH-eHx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="s3a-eS-LiV"/>
+                            <constraint firstItem="1SK-uu-Cjc" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vlV-Cc-t0d"/>
+                            <constraint firstItem="Eqt-WH-eHx" firstAttribute="leading" secondItem="zkF-OQ-TrP" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="xVU-0f-vdb"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countryName" destination="Eqt-WH-eHx" id="xKd-O7-Jix"/>
+                        <outlet property="mapView" destination="1SK-uu-Cjc" id="qB0-Zl-lEd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="272" y="33"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

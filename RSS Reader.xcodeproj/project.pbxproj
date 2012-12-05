@@ -210,7 +210,7 @@
 			attributes = {
 				CLASSPREFIX = JB;
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "Lee Keyser-Allen";
+				ORGANIZATIONNAME = JumbleBox;
 			};
 			buildConfigurationList = 3B9EDE6A166E967A00D093AF /* Build configuration list for PBXProject "RSS Reader" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -393,6 +393,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RSS Reader/RSS Reader-Prefix.pch";
 				INFOPLIST_FILE = "RSS Reader/RSS Reader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -404,6 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RSS Reader/RSS Reader-Prefix.pch";
 				INFOPLIST_FILE = "RSS Reader/RSS Reader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
