@@ -15,13 +15,13 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Get to Know:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ym3-wY-b9i">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="99" id="jfh-HF-TUG"/>
+                                    <constraint firstAttribute="width" constant="110" id="Cga-Bv-iek"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a country" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qpo-4b-ixF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="a country" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qpo-4b-ixF">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -37,24 +37,36 @@
                             <constraint firstItem="ym3-wY-b9i" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BpP-ZP-3Bg"/>
                             <constraint firstAttribute="trailing" secondItem="0Rw-aD-rzq" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Fdk-ln-QWY"/>
                             <constraint firstAttribute="trailing" secondItem="Qpo-4b-ixF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ZRX-UP-ilv"/>
+                            <constraint firstItem="Qpo-4b-ixF" firstAttribute="leading" secondItem="ym3-wY-b9i" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="eEn-PK-0ov"/>
                             <constraint firstItem="0Rw-aD-rzq" firstAttribute="top" secondItem="ym3-wY-b9i" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="g8Z-Gt-pWi"/>
                             <constraint firstAttribute="bottom" secondItem="0Rw-aD-rzq" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="leJ-xo-2EH"/>
                             <constraint firstItem="0Rw-aD-rzq" firstAttribute="top" secondItem="Qpo-4b-ixF" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="p6P-JS-iH7"/>
-                            <constraint firstItem="Qpo-4b-ixF" firstAttribute="leading" secondItem="ym3-wY-b9i" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="qIa-QM-EtH"/>
                             <constraint firstItem="ym3-wY-b9i" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="t0d-kW-To9"/>
                             <constraint firstItem="0Rw-aD-rzq" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="wO0-uV-zMI"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="countryName" destination="Qpo-4b-ixF" id="dtE-aK-fB0"/>
-                        <outlet property="mapView" destination="0Rw-aD-rzq" id="Gi9-wg-wsI"/>
+                        <outlet property="mapView" destination="0Rw-aD-rzq" id="y2D-Ku-mnb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="293" y="153"/>
+            <point key="canvasLocation" x="23" y="162"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="JBViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JBViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="countryName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="mapView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

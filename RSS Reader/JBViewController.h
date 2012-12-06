@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface JBViewController : UIViewController {
+@interface JBViewController : UIViewController <CLLocationManagerDelegate> {
     
     IBOutlet UIWebView *mapView;
     IBOutlet UITextField *countryName;

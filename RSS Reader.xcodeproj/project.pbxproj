@@ -24,6 +24,10 @@
 		3B9EDE9E166E967A00D093AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9EDE76166E967A00D093AF /* Foundation.framework */; };
 		3B9EDEA6166E967A00D093AF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B9EDEA4166E967A00D093AF /* InfoPlist.strings */; };
 		3B9EDEA9166E967A00D093AF /* RSS_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9EDEA8166E967A00D093AF /* RSS_ReaderTests.m */; };
+		3B9EDEB8166ED99C00D093AF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9EDEB7166ED99C00D093AF /* CoreLocation.framework */; };
+		3B9EDEBE166EF7BE00D093AF /* gv_country_paths.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B9EDEBD166EF7BE00D093AF /* gv_country_paths.json */; };
+		3B9EDEC4166EFDD300D093AF /* code_country.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B9EDEC3166EFDD300D093AF /* code_country.json */; };
+		3B9EDEC6166EFF9B00D093AF /* country_code.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B9EDEC5166EFF9B00D093AF /* country_code.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		3B9EDEA5166E967A00D093AF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B9EDEA7166E967A00D093AF /* RSS_ReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSS_ReaderTests.h; sourceTree = "<group>"; };
 		3B9EDEA8166E967A00D093AF /* RSS_ReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSS_ReaderTests.m; sourceTree = "<group>"; };
+		3B9EDEB7166ED99C00D093AF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3B9EDEBD166EF7BE00D093AF /* gv_country_paths.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gv_country_paths.json; sourceTree = "<group>"; };
+		3B9EDEC3166EFDD300D093AF /* code_country.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = code_country.json; sourceTree = "<group>"; };
+		3B9EDEC5166EFF9B00D093AF /* country_code.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = country_code.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9EDEB8166ED99C00D093AF /* CoreLocation.framework in Frameworks */,
 				3B9EDE75166E967A00D093AF /* UIKit.framework in Frameworks */,
 				3B9EDE77166E967A00D093AF /* Foundation.framework in Frameworks */,
 				3B9EDE79166E967A00D093AF /* CoreGraphics.framework in Frameworks */,
@@ -108,6 +117,7 @@
 		3B9EDE73166E967A00D093AF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B9EDEB7166ED99C00D093AF /* CoreLocation.framework */,
 				3B9EDE74166E967A00D093AF /* UIKit.framework */,
 				3B9EDE76166E967A00D093AF /* Foundation.framework */,
 				3B9EDE78166E967A00D093AF /* CoreGraphics.framework */,
@@ -133,6 +143,7 @@
 		3B9EDE7B166E967A00D093AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B9EDEBD166EF7BE00D093AF /* gv_country_paths.json */,
 				3B9EDE7C166E967A00D093AF /* RSS Reader-Info.plist */,
 				3B9EDE7D166E967A00D093AF /* InfoPlist.strings */,
 				3B9EDE80166E967A00D093AF /* main.m */,
@@ -140,6 +151,8 @@
 				3B9EDE86166E967A00D093AF /* Default.png */,
 				3B9EDE88166E967A00D093AF /* Default@2x.png */,
 				3B9EDE8A166E967A00D093AF /* Default-568h@2x.png */,
+				3B9EDEC3166EFDD300D093AF /* code_country.json */,
+				3B9EDEC5166EFF9B00D093AF /* country_code.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,6 +254,9 @@
 				3B9EDE8B166E967A00D093AF /* Default-568h@2x.png in Resources */,
 				3B9EDE8E166E967A00D093AF /* MainStoryboard_iPhone.storyboard in Resources */,
 				3B9EDE91166E967A00D093AF /* MainStoryboard_iPad.storyboard in Resources */,
+				3B9EDEBE166EF7BE00D093AF /* gv_country_paths.json in Resources */,
+				3B9EDEC4166EFDD300D093AF /* code_country.json in Resources */,
+				3B9EDEC6166EFF9B00D093AF /* country_code.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,13 +13,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Get to Know:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkF-OQ-TrP">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="oRT-TE-n15"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a country" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eqt-WH-eHx">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="a country" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eqt-WH-eHx">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="630" id="CLl-cY-IcF"/>
+                                    <constraint firstAttribute="width" constant="619" id="9Bb-8e-sri"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -38,9 +41,9 @@
                             <constraint firstItem="1SK-uu-Cjc" firstAttribute="top" secondItem="zkF-OQ-TrP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Icd-72-swO"/>
                             <constraint firstItem="1SK-uu-Cjc" firstAttribute="top" secondItem="Eqt-WH-eHx" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="K9q-04-JKU"/>
                             <constraint firstAttribute="trailing" secondItem="1SK-uu-Cjc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="byI-q4-3oz"/>
+                            <constraint firstItem="Eqt-WH-eHx" firstAttribute="leading" secondItem="zkF-OQ-TrP" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="s1Z-ev-ja6"/>
                             <constraint firstAttribute="trailing" secondItem="Eqt-WH-eHx" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="s3a-eS-LiV"/>
                             <constraint firstItem="1SK-uu-Cjc" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="vlV-Cc-t0d"/>
-                            <constraint firstItem="Eqt-WH-eHx" firstAttribute="leading" secondItem="zkF-OQ-TrP" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="xVU-0f-vdb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -53,6 +56,18 @@
             <point key="canvasLocation" x="272" y="33"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="JBViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/JBViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="countryName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="mapView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
